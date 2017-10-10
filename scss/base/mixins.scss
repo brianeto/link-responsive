@@ -1,0 +1,38 @@
+/* @mixin breakpoint($media) {
+  @if $media == xs {
+    @media (max-width: 320px) { @content; }
+  }
+   @else if $media == sm {
+    @media (max-width: 640px) { @content; }
+  }
+  @else if $media == md {
+    @media (max-width: 980px) { @content; }
+  }
+  @else if $media == lg {
+    @media (max-width: 1024px) { @content; }
+  }
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg"
+  }
+}
+*/
+@mixin x-small {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+@mixin small {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (max-width: 980px) {
+    @content;
+  }
+}
+@mixin large {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}

@@ -1,0 +1,59 @@
+@import "base/variables";
+@import "base/mixins";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  width: 1024px;
+  background-color: black;
+  @media screen and (max-width: 980px) {
+    background-color: orange;
+  }
+  @media screen and (max-width: 640px) {
+    background-color: blue;
+  }
+  @media screen and (max-width: 320px) {
+    background-color: green;
+  }
+}
+
+
+.container {
+  box-sizing: border-box;
+  align-content: center;
+}
+
+.navbar {
+  background-color: pink;
+}
+
+.hero {
+  background-color: aquamarine;
+}
+
+.first-row {
+
+  &-wrapper-left {
+    background-color: grey;
+  }
+  &-wrapper-right {
+    background-color: purple;
+  }
+}
+
+.second-row {
+
+  &-wrapper-left {
+    background-color: red;
+  }
+  &-wrapper-center {
+    background-color: green;
+  }
+  &-wrapper-right {
+    background-color: brown;
+  }
+}
+
+.content {
+  background-color: yellow;
+}
