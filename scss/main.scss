@@ -1,59 +1,87 @@
 @import "base/variables";
 @import "base/mixins";
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  width: 1024px;
-  background-color: black;
-  @media screen and (max-width: 980px) {
-    background-color: orange;
+  margin: 0 auto;
+}
+
+/* MOBILE QUERIES */
+
+@include breakpoint(mobile) {
+  .navbar {
+    background-color: $gray;
+    display: flex;
   }
-  @media screen and (max-width: 640px) {
-    background-color: blue;
+  .content {
+    background-color: $beige;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 20px;
+    line-height: 24px;
+
+    & h3 {
+      color: $strong-blue;
+    }
   }
-  @media screen and (max-width: 320px) {
-    background-color: green;
+  .hero {
+    background-color: $blue-bg;
+    padding: 10px;
+    &-wrapper {
+      padding: 50px;
+      color: $blue-gray;
+      font-size: 1.2em;
+
+      & p:first-child {
+        font-size: 2.3em;
+        color: $white;
+      }
+    }
+  }
+  .first-row {
+    display: flex;
+
+    &-wrapper-left {
+      background-color: $dark-purple;
+      color: $light-pink;
+      width: 100%;
+      display: flex;
+      font-size: 1.5em;
+
+      & p {
+        padding-top: 35px;
+        padding-left: 6px;
+      }
+    }
+    &-wrapper-right {
+      display: flex;
+    }
+  }
+  .second-row {
+
+    & img {
+      width: 100%;
+    }
+    &-wrapper {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
-
-.container {
-  box-sizing: border-box;
-  align-content: center;
-}
-
-.navbar {
-  background-color: pink;
-}
-
-.hero {
-  background-color: aquamarine;
-}
-
-.first-row {
-
-  &-wrapper-left {
-    background-color: grey;
-  }
-  &-wrapper-right {
-    background-color: purple;
-  }
-}
-
-.second-row {
-
-  &-wrapper-left {
+/*TABLET QUERIES*/
+@include breakpoint(tablet) {
+  .content {
     background-color: red;
   }
-  &-wrapper-center {
-    background-color: green;
-  }
-  &-wrapper-right {
-    background-color: brown;
-  }
 }
 
-.content {
-  background-color: yellow;
+/*DESKTOP QUERIES*/
+@include breakpoint(desktop) {
+  .content {
+    background-color: yellow;
+  }
 }

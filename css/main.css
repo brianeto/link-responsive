@@ -1,62 +1,61 @@
 /* breakpoints */
-/* @mixin breakpoint($media) {
-  @if $media == xs {
-    @media (max-width: 320px) { @content; }
-  }
-   @else if $media == sm {
-    @media (max-width: 640px) { @content; }
-  }
-  @else if $media == md {
-    @media (max-width: 980px) { @content; }
-  }
-  @else if $media == lg {
-    @media (max-width: 1024px) { @content; }
-  }
-  @else {
-    @warn "Breakpoint mixin supports: xs, sm, md, lg"
-  }
-}
-*/
+/* colors */
+/* define mixin */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  width: 1024px;
-  background-color: black; }
-  @media screen and (max-width: 980px) {
-    body {
-      background-color: orange; } }
-  @media screen and (max-width: 640px) {
-    body {
-      background-color: blue; } }
-  @media screen and (max-width: 320px) {
-    body {
-      background-color: green; } }
+  margin: 0 auto; }
 
-.container {
-  box-sizing: border-box;
-  align-content: center; }
+/* MOBILE QUERIES */
+@media (min-width: 320px) and (max-width: 640px) {
+  .navbar {
+    background-color: #373c3f;
+    display: flex; }
+  .content {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 20px;
+    line-height: 24px; }
+    .content h3 {
+      color: #088ca5; }
+  .hero {
+    background-color: #11a9be;
+    padding: 10px; }
+    .hero-wrapper {
+      padding: 50px;
+      color: #a8d5df;
+      font-size: 1.2em; }
+      .hero-wrapper p:first-child {
+        font-size: 2.3em;
+        color: #ffffff; }
+  .first-row {
+    display: flex; }
+    .first-row-wrapper-left {
+      background-color: #27212c;
+      color: #9a89a8;
+      width: 100%;
+      display: flex;
+      font-size: 1.5em; }
+      .first-row-wrapper-left p {
+        padding-top: 35px;
+        padding-left: 6px; }
+    .first-row-wrapper-right {
+      display: flex; }
+  .second-row img {
+    width: 100%; }
+  .second-row-wrapper {
+    display: flex;
+    align-items: center; } }
 
-.navbar {
-  background-color: pink; }
+/*TABLET QUERIES*/
+@media (min-width: 641px) and (max-width: 1024px) {
+  .content {
+    background-color: red; } }
 
-.hero {
-  background-color: aquamarine; }
-
-.first-row-wrapper-left {
-  background-color: grey; }
-
-.first-row-wrapper-right {
-  background-color: purple; }
-
-.second-row-wrapper-left {
-  background-color: red; }
-
-.second-row-wrapper-center {
-  background-color: green; }
-
-.second-row-wrapper-right {
-  background-color: brown; }
-
-.content {
-  background-color: yellow; }
+/*DESKTOP QUERIES*/
+@media (min-width: 1025px) {
+  .content {
+    background-color: yellow; } }

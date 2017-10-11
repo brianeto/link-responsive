@@ -1,7 +1,15 @@
 /* breakpoints */
-$breakpoints: (
-  "xs": 320px,    //targeting <568px devices (e.g. all iPhones <6)
-  "sm": 640px,  //targeting >=568px devices (e.g. iPhones >=6)
-  "md": 980px,  //targeting >=768px tablets (e.g. portrait iPad)
-  "lg": 1024px  //targeting >=1024px tablets (e.g. landscape iPad) and desktops but leaving room for the scroll bar
-);
+$phone-min: 320px;
+$phone-max: 640px;
+$tablet: 980px;
+$desktop: 1024px;
+
+/* colors */
+$blue-bg: #11a9be;
+$white: #ffffff;
+$blue-gray: #a8d5df;
+$dark-purple: #27212c;
+$light-pink: #9a89a8;
+$beige: #ebebeb;
+$strong-blue: #088ca5;
+$gray: #373c3f;
