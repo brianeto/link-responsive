@@ -1,0 +1,49 @@
+.features {
+  background-color: $beige;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px 40px 40px;
+  line-height: 24px;
+
+  &-left-title {
+    color: $strong-blue;
+  }
+}
+/*MOBILE QUERIES*/
+@include breakpoint(mobile) {
+  .features {
+    flex-direction: column;
+    padding: 20px 40px 40px 40px;
+    line-height: 24px;
+
+    &-left-title {
+    }
+  }
+}
+
+/*TABLET QUERIES*/
+@include breakpoint(tablet) {
+  .features {
+    flex-direction: row;
+    padding: 30px 30px 65px 30px;
+    height: 35vh;
+
+    &-left {
+      padding-right: 50px;
+      padding-left: 10px;
+
+      &-title {
+        font-size: 2.6vh;
+      }
+    }
+    &-right {
+      height: 30vh;
+      padding-top: 7.5vh;
+    }
+  }
+}
+
+/*DESKTOP QUERIES*/
+@include breakpoint(desktop) {
+
+}

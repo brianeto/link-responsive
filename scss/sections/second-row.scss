@@ -1,0 +1,41 @@
+.second-row {
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    &-imgs {
+      width: 100%;
+    }
+  }
+}
+
+/*MOBILE QUERIES*/
+@include breakpoint(mobile) {
+  .second-row {
+
+    &-wrapper {
+
+      &-imgs {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*TABLET QUERIES*/
+@include breakpoint(tablet) {
+  .second-row {
+    display: flex;
+    height: 22vh;
+    &-wrapper {
+
+      &-imgs {
+      }
+    }
+  }
+}
+
+/*DESKTOP QUERIES*/
+@include breakpoint(desktop) {
+
+}

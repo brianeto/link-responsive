@@ -1,8 +1,7 @@
-/* breakpoints */
-$phone-min: 320px;
-$phone-max: 640px;
-$tablet: 980px;
-$desktop: 1024px;
+/* fonts */
+$font-family-base: 'montserratregular';
+$font-family-light: 'montserratlight';
+$font-family-bold: 'montserratbold';
 
 /* colors */
 $blue-bg: #11a9be;
@@ -13,3 +12,9 @@ $light-pink: #9a89a8;
 $beige: #ebebeb;
 $strong-blue: #088ca5;
 $gray: #373c3f;
+
+/* breakpoints */
+$phone-min: 320px;
+$phone-max: 640px;
+$tablet: 980px;
+$desktop: 1024px;

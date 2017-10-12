@@ -1,87 +1,10 @@
 @import "base/variables";
 @import "base/mixins";
+@import "base/base";
+@import "base/fonts";
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0 auto;
-}
-
-/* MOBILE QUERIES */
-
-@include breakpoint(mobile) {
-  .navbar {
-    background-color: $gray;
-    display: flex;
-  }
-  .content {
-    background-color: $beige;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    padding-top: 20px;
-    line-height: 24px;
-
-    & h3 {
-      color: $strong-blue;
-    }
-  }
-  .hero {
-    background-color: $blue-bg;
-    padding: 10px;
-    &-wrapper {
-      padding: 50px;
-      color: $blue-gray;
-      font-size: 1.2em;
-
-      & p:first-child {
-        font-size: 2.3em;
-        color: $white;
-      }
-    }
-  }
-  .first-row {
-    display: flex;
-
-    &-wrapper-left {
-      background-color: $dark-purple;
-      color: $light-pink;
-      width: 100%;
-      display: flex;
-      font-size: 1.5em;
-
-      & p {
-        padding-top: 35px;
-        padding-left: 6px;
-      }
-    }
-    &-wrapper-right {
-      display: flex;
-    }
-  }
-  .second-row {
-
-    & img {
-      width: 100%;
-    }
-    &-wrapper {
-      display: flex;
-      align-items: center;
-    }
-  }
-}
-
-/*TABLET QUERIES*/
-@include breakpoint(tablet) {
-  .content {
-    background-color: red;
-  }
-}
-
-/*DESKTOP QUERIES*/
-@include breakpoint(desktop) {
-  .content {
-    background-color: yellow;
-  }
-}
+@import "sections/navbar";
+@import "sections/hero";
+@import "sections/first-row";
+@import "sections/second-row";
+@import "sections/features";

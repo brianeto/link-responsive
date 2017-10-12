@@ -1,61 +1,139 @@
-/* breakpoints */
+/* fonts */
 /* colors */
+/* breakpoints */
 /* define mixin */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: "montserratregular"; }
 
-/* MOBILE QUERIES */
-@media (min-width: 320px) and (max-width: 640px) {
-  .navbar {
-    background-color: #373c3f;
-    display: flex; }
-  .content {
-    background-color: #ebebeb;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    padding-top: 20px;
-    line-height: 24px; }
-    .content h3 {
-      color: #088ca5; }
-  .hero {
-    background-color: #11a9be;
-    padding: 10px; }
-    .hero-wrapper {
-      padding: 50px;
+@font-face {
+  font-family: 'montserratbold';
+  src: url("/fonts/montserrat-bold-webfont.woff2") format("woff2"), url("/fonts/montserrat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url("/fonts/montserrat-regular-webfont.woff2") format("woff2"), url("/fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratlight';
+  src: url("/fonts/montserrat-light-webfont.woff2") format("woff2"), url("/fonts/montserrat-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.navbar {
+  background-color: #373c3f;
+  display: flex; }
+
+/*MOBILE QUERIES*/
+/*TABLET QUERIES*/
+/*DESKTOP QUERIES*/
+.hero {
+  background-color: #11a9be;
+  padding: 3vmin; }
+  .hero-wrapper {
+    padding: 32px 0px 35px 20px;
+    font-size: 6vw; }
+    .hero-wrapper-text {
+      color: #ffffff; }
+    .hero-wrapper-linkpage {
       color: #a8d5df;
-      font-size: 1.2em; }
-      .hero-wrapper p:first-child {
-        font-size: 2.3em;
-        color: #ffffff; }
-  .first-row {
-    display: flex; }
-    .first-row-wrapper-left {
-      background-color: #27212c;
-      color: #9a89a8;
-      width: 100%;
-      display: flex;
-      font-size: 1.5em; }
-      .first-row-wrapper-left p {
-        padding-top: 35px;
-        padding-left: 6px; }
-    .first-row-wrapper-right {
-      display: flex; }
-  .second-row img {
-    width: 100%; }
-  .second-row-wrapper {
+      font-size: 3vw; }
+
+/*MOBILE QUERIES*/
+/*TABLET QUERIES*/
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-wrapper {
+    font-size: 7vw; } }
+
+/*DESKTOP QUERIES*/
+.first-row {
+  display: flex;
+  height: 18vh; }
+  .first-row-wrapper-left {
+    background-color: #27212c;
+    color: #9a89a8;
+    width: 100%;
     display: flex;
-    align-items: center; } }
+    height: 18.4vh;
+    font-size: 3.3vw; }
+    .first-row-wrapper-left-text {
+      padding-left: 3vh;
+      width: 100%;
+      align-self: center; }
+  .first-row-wrapper-right {
+    display: flex; }
+
+/*MOBILE QUERIES*/
+@media (min-width: 320px) and (max-width: 640px) {
+  .first-row-wrapper-right-arrow {
+    width: 32vw; } }
 
 /*TABLET QUERIES*/
 @media (min-width: 641px) and (max-width: 1024px) {
-  .content {
-    background-color: red; } }
+  .first-row-wrapper-left {
+    font-size: 3.8vw; }
+  .first-row-wrapper-right-arrow {
+    width: 25vw;
+    height: 18.4vh; } }
 
 /*DESKTOP QUERIES*/
 @media (min-width: 1025px) {
-  .content {
-    background-color: yellow; } }
+  .first-row-wrapper-right-arrow {
+    height: 18.4vh; } }
+
+.second-row-wrapper {
+  display: flex;
+  align-items: center; }
+  .second-row-wrapper-imgs {
+    width: 100%; }
+
+/*MOBILE QUERIES*/
+@media (min-width: 320px) and (max-width: 640px) {
+  .second-row-wrapper-imgs {
+    width: 100%; } }
+
+/*TABLET QUERIES*/
+@media (min-width: 641px) and (max-width: 1024px) {
+  .second-row {
+    display: flex;
+    height: 22vh; } }
+
+/*DESKTOP QUERIES*/
+.features {
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px 40px 40px;
+  line-height: 24px; }
+  .features-left-title {
+    color: #088ca5; }
+
+/*MOBILE QUERIES*/
+@media (min-width: 320px) and (max-width: 640px) {
+  .features {
+    flex-direction: column;
+    padding: 20px 40px 40px 40px;
+    line-height: 24px; } }
+
+/*TABLET QUERIES*/
+@media (min-width: 641px) and (max-width: 1024px) {
+  .features {
+    flex-direction: row;
+    padding: 30px 30px 65px 30px;
+    height: 35vh; }
+    .features-left {
+      padding-right: 50px;
+      padding-left: 10px; }
+      .features-left-title {
+        font-size: 2.6vh; }
+    .features-right {
+      height: 30vh;
+      padding-top: 7.5vh; } }
+
+/*DESKTOP QUERIES*/

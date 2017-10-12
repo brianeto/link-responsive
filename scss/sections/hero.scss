@@ -1,0 +1,44 @@
+.hero {
+  background-color: $blue-bg;
+  padding: 3vmin;
+
+  &-wrapper {
+    padding: 32px 0px 35px 20px;
+    font-size: 6vw;
+
+    &-text {
+      color: $white;
+    }
+    &-linkpage {
+      color: $blue-gray;
+      font-size: 3vw;
+    }
+  }
+}
+/*MOBILE QUERIES*/
+@include breakpoint(mobile) {
+  .hero {
+    &-wrapper {
+      &-text {
+      }
+    }
+  }
+}
+
+/*TABLET QUERIES*/
+@include breakpoint(tablet) {
+  .hero {
+
+    &-wrapper {
+      font-size: 7vw;
+      
+      &-text {
+      }
+    }
+  }
+}
+
+/*DESKTOP QUERIES*/
+@include breakpoint(desktop) {
+
+}

@@ -1,0 +1,21 @@
+.navbar {
+  background-color: $gray;
+  display: flex;
+}
+
+/*MOBILE QUERIES*/
+@include breakpoint(mobile) {
+  .navbar {
+
+  }
+}
+
+/*TABLET QUERIES*/
+@include breakpoint(tablet) {
+
+}
+
+/*DESKTOP QUERIES*/
+@include breakpoint(desktop) {
+
+}
