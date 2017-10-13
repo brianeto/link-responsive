@@ -26,7 +26,7 @@
   .features {
     flex-direction: row;
     padding: 30px 30px 65px 30px;
-    height: 35vh;
+    height: auto;
 
     &-left {
       padding-right: 50px;
@@ -37,13 +37,31 @@
       }
     }
     &-right {
-      height: 30vh;
-      padding-top: 7.5vh;
+      padding-top: 6vh;
     }
   }
 }
 
 /*DESKTOP QUERIES*/
 @include breakpoint(desktop) {
-
+  .features {
+      flex-direction: row;
+      padding: 35px 30px 65px 65px;
+      height: 24vh;
+      &-left {
+        padding-right: 50px;
+        padding-left: 10px;
+        height: 25vh;
+        & p {
+            width: 87%;
+        }
+      }
+      &-right {
+          height: 20vh;
+          padding-top: 5.5vh;
+          & p {
+              width: 87%;
+          }
+      }
+  }
 }
