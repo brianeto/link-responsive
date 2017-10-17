@@ -1,7 +1,7 @@
 .navbar {
   background-color: $gray;
   display: flex;
-  background: $gray;
+
   &-title {
     display: none;
   }
@@ -9,7 +9,9 @@
     color: $white;
     display: flex;
     list-style: none;
+
     &-list {
+
       &.navbar-content-list a {
         text-decoration: none;
         color: white;
@@ -25,6 +27,7 @@
     justify-content: space-between;
     width: 100%;
     height: 45px;
+
     &-title {
       display: block;
       color: $white;
@@ -39,6 +42,7 @@
       border-top: 2px solid $white;
       cursor: pointer;
       right: 17px;
+
       &:after {
         content: "";
         position: absolute;
@@ -49,6 +53,7 @@
       }
       &:hover ~ .navbar-content {
         max-height: 100vh;
+        left: 53vmin;
       }
     }
     &-content {
@@ -63,9 +68,12 @@
       margin: 0;
       padding: 0;
       transition: max-height 0.4s ease-in-out;
+      left: 53vmin;
+
       & li {
         list-style: none;
         padding: 20px 15px;
+
         &:not(:last-child) {
           border-bottom: 1px solid gray;
         }
@@ -77,16 +85,17 @@
 /*TABLET QUERIES*/
 @include breakpoint(tablet) {
   .navbar {
-    width: 100%;
+
     &-content {
       color: $white;
       display: flex;
       width: 100%;
-      padding: 2%;
       list-style: none;
+
       &-list {
         padding: 2%;
         padding-left: 2%;
+
         &.navbar-content-list a {
           text-decoration: none;
           color: white;
@@ -100,14 +109,16 @@
 @include breakpoint(desktop) {
   .navbar {
     width: 100%;
+
     &-content {
       width: 100%;
-      padding: 2%;
       list-style: none;
-      font-size: 1.6vh;
+      font-size: 1.3vw;
+
       &-list {
         padding: 4%;
         padding-left: 2%;
+        
         &.navbar-content-list a {
           text-decoration: none;
           color: white;

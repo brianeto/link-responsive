@@ -3,6 +3,7 @@
   &-wrapper {
     display: flex;
     align-items: center;
+
     &-imgs {
       width: 100%;
     }
@@ -27,6 +28,7 @@
   .second-row {
     display: flex;
     height: 22vh;
+    
     &-wrapper {
 
       &-imgs {
@@ -37,5 +39,11 @@
 
 /*DESKTOP QUERIES*/
 @include breakpoint(desktop) {
+  .second-row {
+    display: flex;
 
+    &-wrapper {
+      width: 100%;
+    }
+  }
 }

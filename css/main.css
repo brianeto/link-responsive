@@ -28,8 +28,7 @@ body {
 
 .navbar {
   background-color: #373c3f;
-  display: flex;
-  background: #373c3f; }
+  display: flex; }
   .navbar-title {
     display: none; }
   .navbar-content {
@@ -68,7 +67,8 @@ body {
         background-color: #ffffff;
         bottom: 9px; }
       .navbar-hamburger:hover ~ .navbar-content {
-        max-height: 100vh; }
+        max-height: 100vh;
+        left: 53vmin; }
     .navbar-content {
       position: absolute;
       top: 40px;
@@ -80,7 +80,8 @@ body {
       width: auto;
       margin: 0;
       padding: 0;
-      transition: max-height 0.4s ease-in-out; }
+      transition: max-height 0.4s ease-in-out;
+      left: 53vmin; }
       .navbar-content li {
         list-style: none;
         padding: 20px 15px; }
@@ -89,20 +90,17 @@ body {
 
 /*TABLET QUERIES*/
 @media (min-width: 641px) and (max-width: 1024px) {
-  .navbar {
-    width: 100%; }
-    .navbar-content {
-      color: #ffffff;
-      display: flex;
-      width: 100%;
+  .navbar-content {
+    color: #ffffff;
+    display: flex;
+    width: 100%;
+    list-style: none; }
+    .navbar-content-list {
       padding: 2%;
-      list-style: none; }
-      .navbar-content-list {
-        padding: 2%;
-        padding-left: 2%; }
-        .navbar-content-list.navbar-content-list a {
-          text-decoration: none;
-          color: white; } }
+      padding-left: 2%; }
+      .navbar-content-list.navbar-content-list a {
+        text-decoration: none;
+        color: white; } }
 
 /*DESKTOP QUERIES*/
 @media (min-width: 1025px) {
@@ -110,9 +108,8 @@ body {
     width: 100%; }
     .navbar-content {
       width: 100%;
-      padding: 2%;
       list-style: none;
-      font-size: 1.6vh; }
+      font-size: 1.3vw; }
       .navbar-content-list {
         padding: 4%;
         padding-left: 2%; }
@@ -139,6 +136,10 @@ body {
     font-size: 7vw; } }
 
 /*DESKTOP QUERIES*/
+@media (min-width: 1025px) {
+  .hero {
+    padding: 15vmin; } }
+
 .first-row {
   display: flex;
   height: 18vh; }
@@ -171,6 +172,10 @@ body {
 
 /*DESKTOP QUERIES*/
 @media (min-width: 1025px) {
+  .first-row-wrapper-left {
+    font-size: 2.3vw; }
+    .first-row-wrapper-left-text {
+      padding-left: 31%; }
   .first-row-wrapper-right-arrow {
     height: 18.4vh; } }
 
@@ -192,6 +197,12 @@ body {
     height: 22vh; } }
 
 /*DESKTOP QUERIES*/
+@media (min-width: 1025px) {
+  .second-row {
+    display: flex; }
+    .second-row-wrapper {
+      width: 100%; } }
+
 .features {
   background-color: #ebebeb;
   display: flex;
@@ -202,12 +213,6 @@ body {
     color: #088ca5; }
 
 /*MOBILE QUERIES*/
-@media (min-width: 320px) and (max-width: 640px) {
-  .features {
-    flex-direction: column;
-    padding: 20px 40px 40px 40px;
-    line-height: 24px; } }
-
 /*TABLET QUERIES*/
 @media (min-width: 641px) and (max-width: 1024px) {
   .features {
@@ -227,7 +232,7 @@ body {
   .features {
     flex-direction: row;
     padding: 35px 30px 65px 65px;
-    height: 24vh; }
+    height: 33vh; }
     .features-left {
       padding-right: 50px;
       padding-left: 10px;
