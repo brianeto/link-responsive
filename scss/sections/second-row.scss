@@ -6,6 +6,9 @@
 
     &-imgs {
       width: 100%;
+      &-adjust {
+        width: 100%;
+      }
     }
   }
 }
@@ -27,8 +30,7 @@
 @include breakpoint(tablet) {
   .second-row {
     display: flex;
-    height: 22vh;
-    
+    align-items: start;
     &-wrapper {
 
       &-imgs {
@@ -41,6 +43,7 @@
 @include breakpoint(desktop) {
   .second-row {
     display: flex;
+    align-items: start;
 
     &-wrapper {
       width: 100%;

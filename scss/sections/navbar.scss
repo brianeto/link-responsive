@@ -1,6 +1,7 @@
 .navbar {
   background-color: $gray;
   display: flex;
+  height: auto;
 
   &-title {
     display: none;
@@ -26,12 +27,11 @@
     position: relative;
     justify-content: space-between;
     width: 100%;
-    height: 45px;
 
     &-title {
       display: block;
       color: $white;
-      padding-left: 16px
+      padding-left: 5vw;
     }
     &-hamburger {
       position: relative;
@@ -53,7 +53,7 @@
       }
       &:hover ~ .navbar-content {
         max-height: 100vh;
-        left: 53vmin;
+        left: 60vmin;
       }
     }
     &-content {
@@ -68,7 +68,7 @@
       margin: 0;
       padding: 0;
       transition: max-height 0.4s ease-in-out;
-      left: 53vmin;
+      left: 60vmin;
 
       & li {
         list-style: none;
@@ -85,20 +85,56 @@
 /*TABLET QUERIES*/
 @include breakpoint(tablet) {
   .navbar {
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
 
-    &-content {
+    &-title {
+      display: block;
       color: $white;
+      padding-left: 33px;
+      font-size: 2.3vh;
+    }
+    &-hamburger {
+      position: relative;
+      align-self: center;
+      width: 30px;
+      height: 20px;
+      border-bottom: 2px solid $white;
+      border-top: 2px solid $white;
+      cursor: pointer;
+      right: 17px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        background-color: $white;
+        bottom: 9px;
+      }
+      &:hover ~ .navbar-content {
+        max-height: 100vh;
+        left: 75vmin;
+      }
+    }
+    &-content {
+      position: absolute;
+      top: 60px;
       display: flex;
-      width: 100%;
-      list-style: none;
+      flex-direction: column;
+      background-color: $gray;
+      max-height: 0;
+      overflow: hidden;
+      width: auto;
+      padding: 0;
 
-      &-list {
-        padding: 2%;
-        padding-left: 2%;
+      & li {
+        list-style: none;
+        padding: 20px 15px;
 
-        &.navbar-content-list a {
-          text-decoration: none;
-          color: white;
+        &:not(:last-child) {
+          border-bottom: 1px solid gray;
         }
       }
     }
@@ -108,17 +144,17 @@
 /*DESKTOP QUERIES*/
 @include breakpoint(desktop) {
   .navbar {
+    display: inline-block;
     width: 100%;
 
     &-content {
-      width: 100%;
       list-style: none;
       font-size: 1.3vw;
 
       &-list {
         padding: 4%;
         padding-left: 2%;
-        
+
         &.navbar-content-list a {
           text-decoration: none;
           color: white;

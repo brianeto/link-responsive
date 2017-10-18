@@ -1,13 +1,10 @@
 .first-row {
   display: flex;
-  height: 18vh;
-
   &-wrapper-left {
     background-color: $dark-purple;
     color: $light-pink;
     width: 100%;
     display: flex;
-    height: 18.4vh;
     font-size: 3.3vw;
 
     &-text {
@@ -18,17 +15,26 @@
   }
   &-wrapper-right {
     display: flex;
+    background-color: $pink;
+    width: 100%;
+    flex: 1 3 auto;
+    & img {
+      width: 5vw;
+      padding-left: 42%;
+    }
   }
 }
 /*MOBILE QUERIES*/
 @include breakpoint(mobile) {
   .first-row {
-
     &-wrapper-left {
-
     }
     &-wrapper-right {
-
+      flex: 1 2.7 auto;
+      & img {
+        width: 5vw;
+        padding: 11vw;
+      }
       &-arrow {
         width: 32vw;
       }
@@ -41,10 +47,17 @@
   .first-row {
 
     &-wrapper-left {
-      font-size: 3.8vw;
+      font-size: 3vw;
+      &-text {
+        padding-left: 5vh;
+        width: 100%;
+        align-self: center;
+      }
     }
     &-wrapper-right {
-
+      & img {
+        padding: 8vh
+      }
       &-arrow {
         width: 25vw;
         height: 18.4vh;
@@ -56,16 +69,19 @@
 /*DESKTOP QUERIES*/
 @include breakpoint(desktop) {
   .first-row {
-
+    height: 25vmin;
     &-wrapper-left {
-      font-size: 2.3vw;
+      font-size: 3vw;
 
       &-text{
-        padding-left: 31%;
+        padding-left: 11%;
       }
     }
     &-wrapper-right {
 
+      & img {
+        padding: 10vh
+      }
       &-arrow {
         height: 18.4vh;
       }
