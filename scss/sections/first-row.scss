@@ -8,7 +8,7 @@
     font-size: 3.3vw;
 
     &-text {
-      padding-left: 3vh;
+      padding-left: 10%;
       width: 100%;
       align-self: center;
     }
@@ -49,12 +49,12 @@
     &-wrapper-left {
       font-size: 3vw;
       &-text {
-        padding-left: 5vh;
-        width: 100%;
-        align-self: center;
+        padding-left: 15%;
       }
     }
     &-wrapper-right {
+
+      width: unset;
       & img {
         padding: 8vh
       }
@@ -69,15 +69,15 @@
 /*DESKTOP QUERIES*/
 @include breakpoint(desktop) {
   .first-row {
-    height: 25vmin;
     &-wrapper-left {
       font-size: 3vw;
 
       &-text{
-        padding-left: 11%;
+        padding-left: 15%;
       }
     }
     &-wrapper-right {
+      width: unset;
 
       & img {
         padding: 10vh

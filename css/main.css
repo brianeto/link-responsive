@@ -181,7 +181,7 @@ body {
     display: flex;
     font-size: 3.3vw; }
     .first-row-wrapper-left-text {
-      padding-left: 3vh;
+      padding-left: 10%;
       width: 100%;
       align-self: center; }
   .first-row-wrapper-right {
@@ -208,23 +208,23 @@ body {
   .first-row-wrapper-left {
     font-size: 3vw; }
     .first-row-wrapper-left-text {
-      padding-left: 5vh;
-      width: 100%;
-      align-self: center; }
-  .first-row-wrapper-right img {
-    padding: 8vh; }
-  .first-row-wrapper-right-arrow {
-    width: 25vw;
-    height: 18.4vh; } }
+      padding-left: 15%; }
+  .first-row-wrapper-right {
+    width: unset; }
+    .first-row-wrapper-right img {
+      padding: 8vh; }
+    .first-row-wrapper-right-arrow {
+      width: 25vw;
+      height: 18.4vh; } }
 
 /*DESKTOP QUERIES*/
 @media (min-width: 1025px) {
-  .first-row {
-    height: 25vmin; }
-    .first-row-wrapper-left {
-      font-size: 3vw; }
-      .first-row-wrapper-left-text {
-        padding-left: 11%; }
+  .first-row-wrapper-left {
+    font-size: 3vw; }
+    .first-row-wrapper-left-text {
+      padding-left: 15%; }
+  .first-row-wrapper-right {
+    width: unset; }
     .first-row-wrapper-right img {
       padding: 10vh; }
     .first-row-wrapper-right-arrow {
@@ -295,6 +295,6 @@ body {
         width: 87%; }
     .features-right {
       height: 20vh;
-      padding-top: 5.5vh; }
+      padding-top: 3.7vh; }
       .features-right p {
         width: 87%; } }
