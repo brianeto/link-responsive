@@ -12,8 +12,7 @@
     }
   }
 }
-
-/*MOBILE QUERIES*/
+/* MOBILE QUERIES */
 @include breakpoint(mobile) {
   .second-row {
 
@@ -25,21 +24,14 @@
     }
   }
 }
-
-/*TABLET QUERIES*/
+/* TABLET QUERIES */
 @include breakpoint(tablet) {
   .second-row {
     display: flex;
     align-items: start;
-    &-wrapper {
-
-      &-imgs {
-      }
-    }
   }
 }
-
-/*DESKTOP QUERIES*/
+/* DESKTOP QUERIES */
 @include breakpoint(desktop) {
   .second-row {
     display: flex;

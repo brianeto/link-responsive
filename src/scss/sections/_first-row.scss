@@ -17,20 +17,16 @@
     display: flex;
     background-color: $pink;
     width: 100%;
-    flex: 1 3 auto;
     & img {
       width: 5vw;
       padding-left: 42%;
     }
   }
 }
-/*MOBILE QUERIES*/
+/* MOBILE QUERIES */
 @include breakpoint(mobile) {
   .first-row {
-    &-wrapper-left {
-    }
     &-wrapper-right {
-      flex: 1 2.7 auto;
       & img {
         width: 5vw;
         padding: 11vw;
@@ -41,8 +37,7 @@
     }
   }
 }
-
-/*TABLET QUERIES*/
+/* TABLET QUERIES */
 @include breakpoint(tablet) {
   .first-row {
 
@@ -53,10 +48,9 @@
       }
     }
     &-wrapper-right {
-
       width: unset;
       & img {
-        padding: 8vh
+        padding: 8vh;
       }
       &-arrow {
         width: 25vw;
@@ -65,8 +59,7 @@
     }
   }
 }
-
-/*DESKTOP QUERIES*/
+/* DESKTOP QUERIES */
 @include breakpoint(desktop) {
   .first-row {
     &-wrapper-left {
@@ -80,7 +73,7 @@
       width: unset;
 
       & img {
-        padding: 10vh
+        padding: 10vh;
       }
       &-arrow {
         height: 18.4vh;

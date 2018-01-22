@@ -3,7 +3,7 @@
   padding: 3vmin;
 
   &-wrapper {
-    padding: 32px 0px 35px 20px;
+    padding: 32px 0 35px 20px;
     font-size: 6vw;
 
     &-text {
@@ -15,30 +15,16 @@
     }
   }
 }
-/*MOBILE QUERIES*/
-@include breakpoint(mobile) {
-  .hero {
-    &-wrapper {
-      &-text {
-      }
-    }
-  }
-}
-
-/*TABLET QUERIES*/
+/* TABLET QUERIES */
 @include breakpoint(tablet) {
   .hero {
 
     &-wrapper {
       font-size: 7vw;
-
-      &-text {
-      }
     }
   }
 }
-
-/*DESKTOP QUERIES*/
+/* DESKTOP QUERIES */
 @include breakpoint(desktop) {
   .hero {
     padding: 15vmin;
