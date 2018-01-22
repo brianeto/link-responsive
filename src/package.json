@@ -1,0 +1,30 @@
+{
+  "name": "link-responsive",
+  "version": "1.0.0",
+  "description": "responsive lading page by brianeto",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianeto/link-responsive.git"
+  },
+  "author": "Brianeto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianeto/link-responsive/issues"
+  },
+  "homepage": "https://github.com/brianeto/link-responsive#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.2.4",
+    "browser-sync": "2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "3.1.0",
+    "gulp-sass-lint": "^1.3.4",
+    "gulp-stylelint": "^6.0.0",
+    "stylelint": "^8.4.0"
+  }
+}
